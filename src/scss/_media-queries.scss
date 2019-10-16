@@ -37,7 +37,31 @@
 
    
 }
+@media screen and (max-width:320px){
+    .spot img {
+        width: 80px;
+    }
+    img.game-card {
+        height: 100px;
+        z-index: 6;
+    }
 
+    .spots .spot img {
+        z-index: 3;
+        width: 60px;
+    }
+
+    .btn-game {
+        width: 90%;
+        font-size: 21px;
+    }
+    
+    .game-modal h1 {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 700;
+    }
+}
 @media screen and (max-width:800px){
     .deck,#bet-area,.chips,#noob-data{
         display: none;
