@@ -1,0 +1,114 @@
+
+@media screen and (min-width:200px){
+    .spot{
+        display: none;
+    }
+
+    .buttons {
+        text-align: center;
+
+        div{
+            padding: 0px;
+            margin-bottom: 20px;
+
+            
+        }
+    }
+    .btn-game{
+        width: 95%;
+    }
+
+    .spot.spot-4{
+        display: inline-block;
+    }
+
+    .container {
+        padding: 50px 30px;
+    }
+    
+    .logo{
+        width: 170px;
+    }
+
+    .rules{
+       //height: 150px;
+       
+    }
+
+   
+}
+
+@media screen and (max-width:800px){
+    .deck,#bet-area,.chips,#noob-data{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:720px){
+    .game-modal {
+        width: 90vw;
+        left: 5vw;
+    }
+}
+
+@media screen and (min-width:500px){
+
+    .spot.spot-4{
+        display: inline-block;
+    }
+
+    .spot.spot-3{
+        display: inline-block;
+    }
+
+    .spot.spot-5{
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width:890px){
+    .spot{
+        display: inline-block;
+    }
+    .spot.spot-1{
+    display: none;
+    }
+
+    
+    .spot.spot-7{
+        display: none;
+    }
+    .spots{
+        margin-top: 60px;
+    }
+    .btn-game{
+        width: 100%;
+    }
+
+    .buttons {
+        text-align: center;
+
+        div{
+            padding: 0px;
+            margin-bottom: 20px;
+
+            padding-right: 15px;
+            padding-left: 15px; 
+        }
+    }
+}
+
+
+@media screen and (min-width:1300px){
+    .spot.spot-1{
+        display: inline-block;
+    }
+    .spot.spot-7{
+        display: inline-block;
+    }
+    .spots .spot{
+        display: inline-block;
+    }
+
+}

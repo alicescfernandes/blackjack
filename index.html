@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackJack</title>
+
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="vendor/js/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  <script src="vendor/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="title" content="BlackJack Online">
+  <meta name="description" content="This was a simple game develop for college, uses only alot of Javascript. Try it out!">
+  
+  <meta property="og:title" content="BlackJack Online">
+  <meta property="og:description" content="This was a simple game develop for college, uses only alot of Javascript. Try it out!">
+  <meta property="og:site_name" content="BlackJack Online">
+  <meta property="og:url" content="https://alicescfernandes.github.io/blackjack">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://alicescfernandes.github.io/blackjack/assets/og.png">
+
+</head>
+
+<body>
+  <section id="noob-data" class="container-fluid">
+    <div class="row">
+      <div id="start-value" class="col">Start Money: </div>
+      <div id="bet-value" class="col">Bet Ammount: </div>
+      <div id="hand-value" class="col">Hand Value: </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="rules">
+      <div class="table-rules">
+        <div id="dealer-cards" class="dealer-cards">
+        </div>
+        <img src="assets/svg/rues.svg">
+      </div>
+      <div>
+        <img class="deck" src="assets/svg/back_card.svg">
+      </div>
+      <div class="chips">
+
+        <div class="chip" draggable="true" id="chip-100" class="chip chip-100"
+          data-value="100">
+          <img src="assets/svg/chip_100.svg" alt="" sizes="" srcset="">
+        </div>
+
+        <div draggable="true" id="chip-50" class="chip chip-50" data-value="50">
+          <img src="assets/svg/chip_50.svg" alt="" sizes="" srcset="">
+        </div>
+
+        <div draggable="true" id="chip-25" class="chip chip-25" data-value="25">
+          <img src="assets/svg/chip_25.svg" alt="" sizes="" srcset="">
+        </div>
+
+        <div draggable="true" id="chip-5" class="chip chip-5" data-value="5">
+          <img src="assets/svg/chip_5.svg" alt="" sizes="" srcset="">
+        </div>
+
+        <div id="chip-1" draggable="true" class="chip chip-1" data-value="1">
+          <img src="assets/svg/chip_1.svg" alt="" sizes="" srcset="">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="spots row">
+      <div class="col spot  spot-1"> <img src="assets/svg/spot.svg" class="spot-1" alt=""></div>
+      <div class="col spot spot-2"> <img src="assets/svg/spot.svg" class="spot-2" alt=""></div>
+      <div class="col spot spot-3"> <img src="assets/svg/spot.svg" class="spot-3" alt=""></div>
+      <div class="col spot spot-active spot-4 ">
+        <img src="assets/svg/spot.svg" class="spot-4" alt="">
+        <div class="spot-cards">
+
+        </div>
+      </div>
+      <div class="col spot spot-5"> <img src="assets/svg/spot.svg" class="spot-5" alt=""></div>
+      <div class="col spot spot-6"> <img src="assets/svg/spot.svg" class="spot-6" alt=""></div>
+      <div class="col spot spot-7"> <img src="assets/svg/spot.svg" class="spot-7" alt=""></div>
+
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="bet-area">
+          <p>TO PLACE A BET DRAG CHIPS TO HERE</p>
+          <div id="bet-chips">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="buttons row">
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <button id="bet"class="btn-game">Deal</button>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <button id="card" class="btn-game" disabled>Hit</button>
+      </div>
+
+    <div class=" col-12 col-sm-12 col-md-3 col-lg-3">
+          <button id="stand" class="btn-game" disabled>Stand</button>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+        <button id="new_game" class="btn-game" disabled>New Game</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="game-modal">
+    <div class="container-fluid">
+      <div class="row">
+        <h1></h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="sec_debug">
+    <h1>Debug</h1>
+    <p id="debug"></p>
+  </section>
+
+  <script src="js/blackjack_object.js"></script>
+  <script src="js/blackjack_manager.js"></script>
+  <section>
+    <script> </script>
+  </section>
+</body>
+
+</html>

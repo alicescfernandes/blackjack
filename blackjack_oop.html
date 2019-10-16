@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+
+    <title>BlackJack</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>BLACKJACK</h1>
+    </header>
+
+    <section id="game">
+      <h1>Dealer</h1>
+      <p id="dealer"></p>
+      <h1>Player</h1>
+      <p id="player"></p>
+      <button id="card" type="button" onclick="player_new_card()">Card</button>
+      <button id="stand" type="button" onclick="dealer_finish()">Stand</button>
+      <button id="new_game" type="button" onclick="new_game()" disabled>New Game</button>
+
+      <div id="">
+        1:<input class="bet-field" type="number" value="0" min="0" data-value="1" >
+        5:<input class="bet-field" type="number" value="0" min="0" data-value="5" >
+        25:<input class="bet-field" type="number" value="0" min="0" data-value="25" >
+        50:<input class="bet-field" type="number" value="0" min="0" data-value="50" >
+        100:<input class="bet-field" type="number" value="0" min="0" data-value="100" >
+        <p id="bet-value"></p>
+        <p id="start-value"></p>
+        <button id="bet" type="button" onclick="set_player_bet()">Bet</button>
+      </div>
+    </section>
+
+    <section id="sec_debug">
+      <h1>Debug</h1>
+      <p id="debug"></p>
+    </section>
+
+  
+    <footer></footer>
+    <script src="js/blackjack_object.js"></script>
+    <script src="js/blackjack_manager.js"></script>
+    <section>
+        <script> window.onload = new_game();</script>
+      </section>
+  </body>
+
+</html> 
